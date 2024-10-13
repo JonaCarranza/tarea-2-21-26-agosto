@@ -95,21 +95,47 @@
       
     </main>
     <aside>
-        <h2 class="video explicativo">Video explicativo</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xrj0zycS68Q?si=s46tGRd8_WBNQaAj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-        <p>Te esta gustando la pagina </p> 
-        <form> 
-        
-          <input type="radio" id="Si" name="Te_gusta_la_pagina" value="Si"> 
-        
-          <label for="Si">Si</label><br> 
-        
-          <input type="radio" id="No" name="Te_gusta_la_pagina" value="No"> 
-        
-          <label for="No">No</label><br> 
-        </form>  
-    </aside>
+      <h2 class="video explicativo">Video explicativo</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xrj0zycS68Q?si=s46tGRd8_WBNQaAj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+        <form id="feedbackForm"> 
+            <p>Te está gustando la página:</p>
+            <input type="radio" id="Si" name="Te_gusta_la_pagina" value="Si">
+            <label for="Si">Sí</label>
+            <input type="radio" id="No" name="Te_gusta_la_pagina" value="No">
+            <label for="No">No</label>
+    
+            <p>Género Musical:</p>
+            <input type="radio" id="Pop" name="Genero" value="Pop">
+            <label for="Pop">Pop</label>
+            <input type="radio" id="Rock" name="Genero" value="Rock">
+            <label for="Rock">Rock</label>
+            <input type="radio" id="Jazz" name="Genero" value="Jazz">
+            <label for="Jazz">Jazz</label>
+            
+            <p>Frecuencia de escucha:</p>
+            <input type="radio" id="Diariamente" name="Frecuencia" value="Diariamente">
+            <label for="Diariamente">Diariamente</label>
+            <input type="radio" id="Semanalmente" name="Frecuencia" value="Semanalmente">
+            <label for="Semanalmente">Semanalmente</label>
+            
+    
+            <p>Plataforma utilizada:</p>
+            <input type="radio" id="Spotify" name="Plataforma" value="Spotify">
+            <label for="Spotify">Spotify</label>
+            <input type="radio" id="YouTube" name="Plataforma" value="YouTube">
+            <label for="YouTube">YouTube</label>
+            
+    
+            <p>¿Te gustaría aprender más sobre música?</p>
+            <input type="radio" id="SiAprender" name="Aprender" value="Si">
+            <label for="SiAprender">Sí</label>
+            <input type="radio" id="NoAprender" name="Aprender" value="No">
+            <label for="NoAprender">No</label>
+        <button type="submit">Enviar</button> 
+      </form>  
+  </aside>
+    <hr>
     <hr>
     <footer>
         <h3 hidden>Derechos de Autor</h3>
@@ -118,5 +144,16 @@
             <P><small>Derechos Reservados &copy:</small></P>
         </address>
     </footer>
+
+
+    <div id="welcomeModal" class="modal">
+      <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>¡Bienvenido!</h2>
+          <p>Bienvenido a la página de Música Popular. ¡Esperamos que disfrutes explorando los géneros musicales!</p>
+      </div>
+  </div>
+  
+    <script src="java.js"></script>
 </body>
 </html>
